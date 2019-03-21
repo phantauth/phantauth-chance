@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "phantauth-chance",
+  "alias": ["phantauth-chance","chance.phantauth.ga"],
+  "public": false,
+  "builds": [
+    { "src": "chance-logo.png", "use": "@now/static" },
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "index.js", "use": "@now/node-server" }
+    ],
+  "routes": [{
+    "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+    },
+    "src": "/api/.*",
+    "dest": "/index.js"
+    }]
+}
