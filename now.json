@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "phantauth-chance",
-  "alias": ["phantauth-chance","chance.phantauth.ga"],
+  "alias": ["phantauth-chance","chance.phantauth.net", "chance.phantauth.ga", "chance.phantauth.tk", "chance.phantauth.ml"],
   "public": false,
   "builds": [
     { "src": "chance-logo.png", "use": "@now/static" },
